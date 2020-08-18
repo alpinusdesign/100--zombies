@@ -1,0 +1,268 @@
+/* ---------- CSS Reset ---------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ---------- Reset end ---------- */
+
+/* - General rules - */
+html {
+    font-size: 10px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50rem;
+    background-color: #313131;
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+/* - Semantic rules - */
+header {
+    padding: 3rem 0 1.5rem;
+    width: 100%;
+}
+
+header #logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* - Typographic rules - */
+/* - Images - */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-screenshot {
+    display: block;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+}
+
+/* - Text - */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+strong {
+    font-weight: 900;
+}
+
+/* - Buttons - */
+button {
+    display: block;
+    margin: 1rem auto;
+    cursor: pointer;
+    font-size: 1.8rem;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #268d00;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* - Simulation grid-related rules - */
+#simulation-grid {
+    display: grid;
+    margin: 0 auto;
+    width: 50rem;
+    height: 50rem;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.simulation-grid-cell {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+#simulation-grid .cell-zombie {
+    background: #71ed43 url("../img/icon_zombie.png") no-repeat right top;
+    background-size: contain;
+}
+
+#simulation-grid .cell-human {
+    background: #0df5ff url("../img/icon_human.png") no-repeat right top;
+    background-size: contain;
+}
+
+/* - Simulation panel-related rules - */
+#simulation-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background-color: #1d1d1d;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+#panel-zombies-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url("../img/icon_zombie_panel.png");
+}
+
+#panel-humans-icon {
+    display: inline-block;
+    background-image: url("../img/icon_human_panel.png");
+}
+
+/* - Statistics display-related rules - */
+#result-display {
+    background-color: #1d1d1d;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+#result-display > * {
+    display: block;
+}
